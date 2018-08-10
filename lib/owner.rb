@@ -8,12 +8,12 @@ class Owner
 
   def initialize(species)
     @species = species
-    @@owners << self
     @pets = {:fishes => [], :dogs => [], :cats => []}
+    @@owners
   end
 
   def self.all
-    @@owners.all
+    @@owners
   end
 
   def self.count
